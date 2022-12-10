@@ -1,4 +1,9 @@
 node_modules/
-.next/
 
+# local env files
+.env*.local
+.env
+
+# Next
+.next/
 .vercel
