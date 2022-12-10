@@ -4,9 +4,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start",
-    "vercel-build": "pnpm prisma:migrate && next build",
-    "prisma:migrate": "PROXY_DATABASE_URL=\"$MIGRATE_DATABASE_URL\" prisma migrate deploy"
+    "start": "next start"
   },
   "dependencies": {
     "@prisma/client": "4.7.1",
