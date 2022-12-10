@@ -1,11 +1,6 @@
 {
-  "name": "hello-next",
+  "name": "prisma-edga-function",
   "version": "1.0.0",
-  "description": "",
-  "keywords": [],
-  "license": "MIT",
-  "author": "",
-  "main": "index.js",
   "scripts": {
     "dev": "next",
     "build": "next build",
