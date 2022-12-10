@@ -14,7 +14,6 @@ export default async function () {
   const quote = await prisma.quote.findUnique({
     where: { id: randomNo, }
   })
-  console.log({ quote })
 
   return new Response(
     JSON.stringify(quote),
