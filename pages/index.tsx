@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 import type { GetServerSideProps } from "next";
 import type { Quote } from "@prisma/client";
 
-import prisma from '../lib/prisma'
+import { prisma } from '../lib/prisma'
 
 export const config = {
   runtime: 'experimental-edge',

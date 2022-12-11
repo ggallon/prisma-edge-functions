@@ -1,10 +1,12 @@
-import prisma from '../../lib/prisma'
+import type { NextRequest } from 'next/server'
+
+import { prisma } from '../../lib/prisma'
 
 export const config = {
   runtime: 'experimental-edge',
 };
 
-export default async function () {
+export default async function handler(req: NextRequest) {
   const count = await prisma.quote.aggregate({
     _count: true,
   })
